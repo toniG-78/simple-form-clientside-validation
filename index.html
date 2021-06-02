@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client Side Validation Form</title>
+    <!-- FONTAWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>REGISTRATION FORM</h2>
+      </div>
+      <form
+        id="form"
+        class="form"
+        action="https://www.google.it/"
+        method="GET"
+        novalidate
+      >
+        <!-- USERNAME -->
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Enter your username..."
+            autocomplete="off"
+            autofocus
+          />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>* Error message</small>
+        </div>
+        <!-- EMAIL -->
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email..."
+          />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>* Error message</small>
+        </div>
+        <!-- PHONE NUMBER -->
+        <div class="form-control">
+          <label for="phone">Phone Number</label>
+          <input
+            type="phone"
+            name="phone"
+            id="phone"
+            placeholder="Enter your phone number..."
+            autocomplete="off"
+          />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>* Error message</small>
+        </div>
+        <!-- PASSWORD -->
+        <div class="form-control">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter your password..."
+            autocomplete="off"
+          />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>* Error message</small>
+        </div>
+        <!-- CONFIRM PASSWORD -->
+        <div class="form-control">
+          <label for="passwordconfirm">Confirm Password</label>
+          <input
+            type="password"
+            name="passwordconfirm"
+            id="passwordconfirm"
+            placeholder="Confirm your password..."
+            autocomplete="off"
+          />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>* Error message</small>
+        </div>
+        <input type="submit" id="btn_submit" class="btn" value="Submit" />
+      </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="form.js"></script>
+  </body>
+</html>
